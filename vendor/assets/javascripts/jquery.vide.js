@@ -193,7 +193,7 @@
                 } else if(this.path.ogv) {
                     poster = this.path.webm;
                 }
-            } 
+            }
         }
 
         // Set video poster
@@ -201,11 +201,6 @@
             findPoster(poster, $.proxy(this.setPoster, this));
         } else {
             this.setPoster(poster + "." + this.settings.posterType);
-        }
-
-        // if parent element has a static position, make it relative
-        if (this.element.css("position") === "static") {
-            this.element.css("position", "relative");
         }
 
         this.element.prepend(this.wrapper);
@@ -326,7 +321,7 @@
         if (this.video) {
             this.video.unbind(pluginName);
         }
-        
+
         delete $[pluginName].lookup[this.index];
         this.element.removeData(pluginName);
         this.wrapper.remove();
