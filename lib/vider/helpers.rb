@@ -1,8 +1,8 @@
 module ViderVideoTag
   # A view helper for creating a video background element
   def vider_tag bg, options={}
-    width         = options[:width]  || '1000px'
-    height        = options[:height] || '500px'
+    width         = options[:width]  || '100%'
+    height        = options[:height] || '100%'
     volume        = options[:volume] || 1
     playback_rate = options[:playback_rate] || 1
     muted         = options[:muted] || true
